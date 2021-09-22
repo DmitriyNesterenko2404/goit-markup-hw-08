@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <!--Верхняя линия-->
+    <header class="header">
+        <div class="container">
+            <nav class="header-nav">
+                <a href="./index.html" class="header-logo link" lang="en"><span class="header-logo-fp">Web</span>Studio</a>
+                <ul class="header-list list">
+                    <li class="header-item">
+                        <a class="header-link link" href="./index.html">Студия</a></li>
+                    <li class="header-item">
+                        <a class="header-link link current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="header-item">
+                        <a class="header-link link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+        
+            <ul class="contacts-list list">
+                <li class="contacts-item">
+                    <a href="mailto:info@devstudio.com" class="header-mail link">
+                        <svg class="icon icon-envelope" weight="16" height="12">
+                            <use href="./imagis/sprite.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com</a>
+                </li>
+
+                <li class="contacts-item">
+                    <a href="tel:+380961111111" class="header-tel link">
+                        <svg class="icon icon-smartphone" weight="10" height="16">
+                            <use href="./imagis/sprite.svg#icon-smartphone"></use>
+                        </svg>
+                    +38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!--Портфолио-->
+    <main class="main">
+        <section class="portfolio section">
+            <div class="container">
+                <h1 hidden>Портфолио</h1>
+                <ul class="portfolio-list list">
+                    <li class="portfolio-item"><button class="portfolio-button" name="button">Все</button></li>
+                    <li class="portfolio-item"><button class="portfolio-button" name="button">Веб-сайты</button></li>
+                    <li class="portfolio-item"><button class="portfolio-button" name="button">Приложения</button></li>
+                    <li class="portfolio-item"><button class="portfolio-button" name="button">Дизайн</button></li>
+                    <li class="portfolio-item"><button class="portfolio-button" name="button">Маркетинг</button></li>
+                </ul>
+
+                <h2 hidden>Роботы</h2>
+                <ul class="produkt-list list">
+                    <li class="produkt-item">
+                        <a class="produkt-link link" href="">
+                            <div class="product-overlay">
+                                <img class="produkt-img" src="./imagis/portfolio/portfolio1.jpg" alt="Открытый ноутбук" width="370" height="294">
+                                <p class="produkt-content">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                                шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="produkt-text-box">
+                                <h3 class="produkt-titel">Технокряк</h3>
+                                <p class="produkt-text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="produkt-item">
+                        <a class="produkt-link link" href="">
+                            <img class="produkt-img" src="./imagis/portfolio/portfolio2.jpg" alt="Баскетболисты" width="370" height="294">
+                            <div class="produkt-text-box">
+                                <h3 class="produkt-titel">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
+                                <p class="produkt-text">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="produkt-item">
+                        <a class="produkt-link link" href="">
+                            <img class="produkt-img" src="./imagis/portfolio/portfolio3.jpg" alt="Рыбный ресторан" width="370" height="294">
+                            <div class="produkt-text-box">
+                                <h3 class="produkt-titel">Ресторан <span lang="en">Seafood</span></h3>
+                                <p class="produkt-text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="produkt-item">
+                        <a class="produkt-link link" href="">
+                            <img class="produkt-img" src="./imagis/portfolio/portfolio4.jpg" alt="Наушники" width="370" height="294">
+                            <div class="produkt-text-box">
+                                <h3 class="produkt-titel">Проект <span lang="en">Prime</span></h3>
+                                <p class="produkt-text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="produkt-item">
+                        <a class="produkt-link link" href="">
+                            <img class="produkt-img" src="./imagis/portfolio/portfolio5.jpg" alt="Коробки" width="370" height="294">
+                            <div class="produkt-text-box">
+                                <h3 class="produkt-titel">Проект <span lang="en">Boxes</span></h3>
+                                <p class="produkt-text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="produkt-item">
+                        <a class="produkt-link link" href="">
+                            <img class="produkt-img" src="./imagis/portfolio/portfolio6.jpg" alt="Монитор" width="370" height="294">
+                            <div class="produkt-text-box">
+                                <h3 class="produkt-titel" lang="en">Inspiration has no Borders</h3>
+                                <p class="produkt-text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="produkt-item">
+                        <a class="produkt-link link" href="">
+                            <img class="produkt-img" src="./imagis/portfolio/portfolio7.jpg" alt="Брошура" width="370" height="294">
+                            <div class="produkt-text-box">
+                                <h3 class="produkt-titel">Издание <span lang="en">Limited Edition</span></h3>
+                                <p class="produkt-text">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="produkt-item">
+                        <a class="produkt-link link" href="">
+                            <img class="produkt-img" src="./imagis/portfolio/portfolio8.jpg" alt="Бирка" width="370" height="294">
+                            <div class="produkt-text-box">
+                                <h3 class="produkt-titel">Проект <span lang="en">LAB</span></h3>
+                                <p class="produkt-text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="produkt-item">
+                        <a class="produkt-link link" href="">
+                            <img class="produkt-img" src="./imagis/portfolio/portfolio9.jpg" alt="Ноутбук" width="370" height="294">
+                            <div class="produkt-text-box">
+                                <h3 class="produkt-titel" lang="en">Growing Business</h3>
+                                <p class="produkt-text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!--Подвал-->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-contacts">
+                <div class="footer-logo-box">
+                    <a class="footer-logo link header-logo-fp" href="./index.html" lang="en">Web<span
+                            class="footer-logo-sp">Studio</span></a>
+                </div>
+                <ul class="footer-list list">
+                    <li class="footer-item"><a href="https://goo.gl/maps/JxcEm6r7qAbZ7r7h9" class="footer-address link"
+                            target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li class="footer-item"><a href="mailto:info@devstudio.com"
+                            class="footer-mail link">info@devstudio.com</a></li>
+                    <li class="footer-item"><a href="tel:+380961111111" class="footer-tel link">+38 096 111 11 11</a></li>
+                </ul>
+            </div>
+    
+        <!--Footer socials-->
+            <div class="socials-footer-box">
+                <h2 class="socials-titel">присоединяйтесь</h2>
+                <ul class="socials-icon list">
+                    <li class="socials-item">
+                        <a href="instagram" class="socials-footer">
+                            <svg class="icon-instagram" weight="20" height="20">
+                                <use href="./imagis/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a href="twitter" class="socials-footer">
+                            <svg class="icon-twitter" weight="20" height="20">
+                                <use href="./imagis/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a href="facebook" class="socials-footer">
+                            <svg class="icon-facebook" weight="20" height="20">
+                                <use href="./imagis/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-item">
+                        <a href="linkedin" class="socials-footer">
+                            <svg class="icon-linkedin" weight="20" height="20">
+                                <use href="./imagis/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        <!--Mailing-->
+            <form class="mailing">
+                <b class="mailing-titel">подпишитесь на рассылку</b>
+                <div class="mailing-field">
+                    <input type="email" class="input-mailing" name="mailing-field-name" placeholder="E-mail">
+                </div>
+            
+                <button type="submit" class="mailing-submit">
+                    <div class="mailing-box">
+                        <span class="button-name">Подписаться</span>
+                        <svg class="icon-send" width="24" height="24">
+                            <use href="./imagis/sprite.svg#icon-send"></use>
+                        </svg>
+                    </div>
+                </button>
+            </form>
+            </address>
+        </div>
+    </footer
+</body>
