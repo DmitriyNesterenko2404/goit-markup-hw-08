@@ -40,10 +40,19 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  /*@media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }*/
 }
 
 .section {
@@ -196,29 +205,69 @@ img {
 
 .hero {
   max-width: 1600px;
+  min-width: 320px;
   margin-left: auto;
   margin-right: auto;
+  padding: 118px 60px 118px 60px;
   background-color: #c4c4c4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imagis/hero/hero-img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imagis/hero/hero-img-mobx1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../imagis/hero/hero-img-mobx2.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imagis/hero/hero-img-tabx1.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../imagis/hero/hero-img-tabx2.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imagis/hero/hero-imgx1.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../imagis/hero/hero-imgx2.jpg);
+  }
+}
+
+.hero-container {
+  padding: 0;
 }
 
 .hero-titel {
-  width: 696px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.38;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-titel-color);
+}
+
+@media screen and (min-width: 1199px) {
+  .hero-titel {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero-button {
@@ -229,7 +278,7 @@ img {
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.6;
   letter-spacing: 0.06em;
   color: var(--main-titel-color);
   border: none;
@@ -239,6 +288,12 @@ img {
 
 .hero-button:hover, .hero-button:focus {
   background-color: #188ce8;
+}
+
+@media screen and (min-width: 1199px) {
+  .hero-button {
+    line-height: 1.87;
+  }
 }
 
 .peculiarities-list {

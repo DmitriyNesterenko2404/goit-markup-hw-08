@@ -1,32 +1,68 @@
 .hero {
   max-width: 1600px;
+  min-width: 320px;
   margin-left: auto;
   margin-right: auto;
+  padding: 118px 60px 118px 60px;
   background-color: rgba(196, 196, 196, 1);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../imagis/hero/hero-img.jpg);
+    url(../imagis/hero/hero-img-mobx1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../imagis/hero/hero-img-mobx2.jpg);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../imagis/hero/hero-img-tabx1.jpg);
+  }
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../imagis/hero/hero-img-tabx2.jpg);
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../imagis/hero/hero-imgx1.jpg);
+  }
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../imagis/hero/hero-imgx2.jpg);
+  }
+}
+
+.hero-container {
+  padding: 0;
 }
 
 .hero-titel {
-  width: 696px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.38;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-titel-color);
+  @media screen and (min-width: 1199px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero-button {
@@ -37,7 +73,7 @@
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.6;
   letter-spacing: 0.06em;
   color: var(--main-titel-color);
   border: none;
@@ -46,5 +82,8 @@
   &:hover,
   &:focus {
     background-color: #188ce8;
+  }
+  @media screen and (min-width: 1199px) {
+    line-height: 1.87;
   }
 }
