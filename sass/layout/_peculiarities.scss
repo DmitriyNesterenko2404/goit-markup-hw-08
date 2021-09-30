@@ -1,18 +1,28 @@
 .peculiarities-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .peculiarities-item {
-  width: 270px;
+  width: 100%;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 2);
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+    margin-right: 0;
+  }
+
   &:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (min-width: 767px) {
+      margin-right: 30px;
+    }
   }
 }
 
-.peculiarities-list {
-  display: flex;
-  justify-content: center;
-}
 .peculiarities-link {
   display: flex;
   justify-content: center;
@@ -30,15 +40,20 @@
 }
 
 .peculiarities-titel {
+  text-align: center;
   margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-titel-color);
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
+
 .peculiarities-text {
   font-weight: 400;
   font-size: 14px;
