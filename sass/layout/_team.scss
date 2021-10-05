@@ -23,20 +23,15 @@
 
 .team-item {
   max-width: 100%;
-  margin-bottom: 30px;
+  height: auto;
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
-  /*&:not(:last-child) {
-    @media screen and (min-width: 768px) {
-      margin-right: 30px;
-    }
-  }*/
 }
 
 .team-box {
-  width: 100%;
+  max-width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: auto;
@@ -81,6 +76,7 @@
   letter-spacing: 0.03em;
   color: var(--secondary-titel-color);
 }
+
 .team-member-text {
   margin-bottom: 16px;
 

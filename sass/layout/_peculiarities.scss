@@ -1,14 +1,18 @@
 .peculiarities-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 30px;
+  column-gap: 30px;
 }
 
 .peculiarities-item {
   width: 100%;
-  margin-bottom: 30px;
   @media screen and (min-width: 768px) {
     width: calc((100% - 60px) / 2);
-    margin-right: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -23,7 +27,7 @@
   background-color: rgba(245, 244, 250, 1);
 }
 
-.peculiarities-link .icon {
+.peculiarities-link.icon {
   width: 70px;
   height: 70px;
 }

@@ -24,29 +24,84 @@
                 <a href="./index.html" class="header-logo link" lang="en"><span class="header-logo-fp">Web</span>Studio</a>
                 <ul class="header-list list">
                     <li class="header-item">
-                        <a class="header-link link" href="./index.html">Студия</a></li>
+                        <a class="header-link link" href="./index.html">Студия</a>
+                    </li>
                     <li class="header-item">
-                        <a class="header-link link current" href="./portfolio.html">Портфолио</a></li>
+                        <a class="header-link link" href="./portfolio.html">Портфолио</a>
+                    </li>
                     <li class="header-item">
-                        <a class="header-link link" href="">Контакты</a></li>
+                        <a class="header-link link" href="">Контакты</a>
+                    </li>
                 </ul>
             </nav>
-        
+    
             <ul class="contacts-list list">
                 <li class="contacts-item">
                     <a href="mailto:info@devstudio.com" class="header-mail link">
-                        <svg class="icon icon-envelope" weight="16" height="12">
+                        <svg class="icon icon-envelope" width="16" height="12">
                             <use href="./imagis/sprite.svg#icon-envelope"></use>
                         </svg>
                         info@devstudio.com</a>
                 </li>
-
+    
                 <li class="contacts-item">
                     <a href="tel:+380961111111" class="header-tel link">
-                        <svg class="icon icon-smartphone" weight="10" height="16">
+                        <svg class="icon icon-smartphone" width="10" height="16">
                             <use href="./imagis/sprite.svg#icon-smartphone"></use>
                         </svg>
-                    +38 096 111 11 11</a>
+                        +38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
+        <button type="button" class="menu-open" data-menu-open>
+            <svg class="icon-menu-open" width="40" height="40">
+                <use href="./imagis/sprite.svg#icon-menu-open"></use>
+            </svg>
+        </button>
+        <div class="mob-menu is-hidden" data-menu>
+            <button type="button" class="menu-close" data-menu-close>
+                <svg class="icon-close-black-18dp" width="40" height="40">
+                    <use href="./imagis/sprite.svg#icon-close-black-18dp"></use>
+                </svg>
+            </button>
+    
+            <ul class="menu-list list">
+                <li class="menu-item">
+                    <a class="menu-link link" href="./index.html">Студия</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link link" href="">Контакты</a>
+                </li>
+            </ul>
+    
+            <ul class="menu-contacts list">
+                <li class="menu-tel-item">
+                    <a href="tel:+380961111111" class="menu-tel link">+38 096 111 11 11</a>
+                </li>
+                <li class="menu-mail-item">
+                    <a href="mailto:info@devstudio.com" class="menu-mail link">info@devstudio.com</a>
+                </li>
+            </ul>
+    
+            <ul class="menu-socials-icon list">
+                <li class="menu-socials">
+                    <a href="https://www.instagram.com" class="menu-socials-link link" target="_blank"
+                        rel="noopener noneferrer">Instagram</a>
+                </li>
+                <li class="menu-socials">
+                    <a href="https://twitter.com" class="menu-socials-link link" target="_blank"
+                        rel="noopener noneferrer">Twitter</a>
+                </li>
+                <li class="menu-socials">
+                    <a href="https://www.facebook.com" class="menu-socials-link link" target="_blank"
+                        rel="noopener noneferrer">Facebook</a>
+                </li>
+                <li class="menu-socials">
+                    <a href="https://www.linkedin.com" class="menu-socials-link link" target="_blank"
+                        rel="noopener noneferrer">Linkedin</a>
                 </li>
             </ul>
         </div>
@@ -56,7 +111,7 @@
     <main class="main">
         <section class="portfolio section">
             <div class="container">
-                <h1 hidden>Портфолио</h1>
+                <h1 class="visually-hidden">Портфолио</h1>
                 <ul class="portfolio-list list">
                     <li class="portfolio-item"><button class="portfolio-button" name="button">Все</button></li>
                     <li class="portfolio-item"><button class="portfolio-button" name="button">Веб-сайты</button></li>
@@ -70,7 +125,15 @@
                     <li class="produkt-item">
                         <a class="produkt-link link" href="">
                             <div class="product-overlay">
-                                <img class="produkt-img" src="./imagis/portfolio/portfolio1.jpg" alt="Открытый ноутбук" width="370" height="294">
+                                <picture class="produkt-img">
+                                    <source srcset="./imagis/portfolio/portfolio1/portfolio1x1.jpg 1x, ./imagis/portfolio/portfolio1/portfolio1x2.jpg 2x" 
+                                        media="(min-width:1200px)">
+                                    <source srcset="./imagis/portfolio/portfolio1/portfolio1-tabx1.jpg 1x, ./imagis/portfolio/portfolio1/portfolio1-tabx2.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source srcset="./imagis/portfolio/portfolio1/portfolio1-mobx1.jpg 1x, ./imagis/portfolio/portfolio1/portfolio1-mobx2.jpg 2x"
+                                        media="(min-width:480px)">
+                                    <img src="./imagis/portfolio/portfolio1/portfolio1x1.jpg" alt="Открытый ноутбук">
+                                </picture>
                                 <p class="produkt-content">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
@@ -83,7 +146,15 @@
 
                     <li class="produkt-item">
                         <a class="produkt-link link" href="">
-                            <img class="produkt-img" src="./imagis/portfolio/portfolio2.jpg" alt="Баскетболисты" width="370" height="294">
+                            <picture class="produkt-img">
+                                <source srcset="./imagis/portfolio/portfolio2/portfolio2x1.jpg 1x, ./imagis/portfolio/portfolio2/portfolio2x2.jpg 2x" 
+                                media="(min-width:1200px)">
+                                <source srcset="./imagis/portfolio/portfolio2/portfolio2-tabx1.jpg 1x, ./imagis/portfolio/portfolio2/portfolio2-tabx2.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source srcset="./imagis/portfolio/portfolio2/portfolio2-mobx1.jpg 1x, ./imagis/portfolio/portfolio2/portfolio2-mobx2.jpg 2x"
+                                    media="(min-width:480px)">
+                                <img src="./imagis/portfolio/portfolio2/portfolio2x1.jpg" alt="Баскетболисты">
+                            </picture>
                             <div class="produkt-text-box">
                                 <h3 class="produkt-titel">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
                                 <p class="produkt-text">Дизайн</p>
@@ -93,7 +164,18 @@
 
                     <li class="produkt-item">
                         <a class="produkt-link link" href="">
-                            <img class="produkt-img" src="./imagis/portfolio/portfolio3.jpg" alt="Рыбный ресторан" width="370" height="294">
+                            <picture class="produkt-img">
+                                <source
+                                    srcset="./imagis/portfolio/portfolio3/portfolio3x1.jpg 1x, ./imagis/portfolio/portfolio3/portfolio3x2.jpg 2x"
+                                    media="(min-width:1200px)">
+                                <source
+                                    srcset="./imagis/portfolio/portfolio3/portfolio3-tabx1.jpg 1x, ./imagis/portfolio/portfolio3/portfolio3-tabx2.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source
+                                    srcset="./imagis/portfolio/portfolio3/portfolio3-mobx1.jpg 1x, ./imagis/portfolio/portfolio3/portfolio3-mobx2.jpg 2x"
+                                    media="(min-width:480px)">
+                                <img src="./imagis/portfolio/portfolio3/portfolio3x1.jpg" alt="Рыбный ресторан">
+                            </picture>
                             <div class="produkt-text-box">
                                 <h3 class="produkt-titel">Ресторан <span lang="en">Seafood</span></h3>
                                 <p class="produkt-text">Приложение</p>
@@ -103,7 +185,18 @@
 
                     <li class="produkt-item">
                         <a class="produkt-link link" href="">
-                            <img class="produkt-img" src="./imagis/portfolio/portfolio4.jpg" alt="Наушники" width="370" height="294">
+                            <picture class="produkt-img">
+                                <source
+                                    srcset="./imagis/portfolio/portfolio4/portfolio4x1.jpg 1x, ./imagis/portfolio/portfolio4/portfolio4x2.jpg 2x"
+                                    media="(min-width:1200px)">
+                                <source
+                                    srcset="./imagis/portfolio/portfolio4/portfolio4-tabx1.jpg 1x, ./imagis/portfolio/portfolio4/portfolio4-tabx2.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source
+                                    srcset="./imagis/portfolio/portfolio4/portfolio4-mobx1.jpg 1x, ./imagis/portfolio/portfolio4/portfolio4-mobx2.jpg 2x"
+                                    media="(min-width:480px)">
+                                <img src="./imagis/portfolio/portfolio4/portfolio4x1.jpg" alt="Наушники">
+                            </picture>
                             <div class="produkt-text-box">
                                 <h3 class="produkt-titel">Проект <span lang="en">Prime</span></h3>
                                 <p class="produkt-text">Маркетинг</p>
@@ -113,7 +206,18 @@
 
                     <li class="produkt-item">
                         <a class="produkt-link link" href="">
-                            <img class="produkt-img" src="./imagis/portfolio/portfolio5.jpg" alt="Коробки" width="370" height="294">
+                            <picture class="produkt-img">
+                                <source
+                                    srcset="./imagis/portfolio/portfolio5/portfolio5x1.jpg 1x, ./imagis/portfolio/portfolio5/portfolio5x2.jpg 2x"
+                                    media="(min-width:1200px)">
+                                <source
+                                    srcset="./imagis/portfolio/portfolio5/portfolio5-tabx1.jpg 1x, ./imagis/portfolio/portfolio5/portfolio5-tabx2.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source
+                                    srcset="./imagis/portfolio/portfolio5/portfolio5-mobx1.jpg 1x, ./imagis/portfolio/portfolio5/portfolio5-mobx2.jpg 2x"
+                                    media="(min-width:480px)">
+                                <img src="./imagis/portfolio/portfolio5/portfolio5x1.jpg" alt="Коробки">
+                            </picture>
                             <div class="produkt-text-box">
                                 <h3 class="produkt-titel">Проект <span lang="en">Boxes</span></h3>
                                 <p class="produkt-text">Приложение</p>
@@ -123,7 +227,18 @@
 
                     <li class="produkt-item">
                         <a class="produkt-link link" href="">
-                            <img class="produkt-img" src="./imagis/portfolio/portfolio6.jpg" alt="Монитор" width="370" height="294">
+                            <picture class="produkt-img">
+                                <source
+                                    srcset="./imagis/portfolio/portfolio6/portfolio6x1.jpg 1x, ./imagis/portfolio/portfolio6/portfolio6x2.jpg 2x"
+                                    media="(min-width:1200px)">
+                                <source
+                                    srcset="./imagis/portfolio/portfolio6/portfolio6-tabx1.jpg 1x, ./imagis/portfolio/portfolio6/portfolio6-tabx2.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source
+                                    srcset="./imagis/portfolio/portfolio6/portfolio6-mobx1.jpg 1x, ./imagis/portfolio/portfolio6/portfolio6-mobx2.jpg 2x"
+                                    media="(min-width:480px)">
+                                <img src="./imagis/portfolio/portfolio6/portfolio6x1.jpg" alt="Монитор">
+                            </picture>
                             <div class="produkt-text-box">
                                 <h3 class="produkt-titel" lang="en">Inspiration has no Borders</h3>
                                 <p class="produkt-text">Веб-сайт</p>
@@ -133,7 +248,18 @@
 
                     <li class="produkt-item">
                         <a class="produkt-link link" href="">
-                            <img class="produkt-img" src="./imagis/portfolio/portfolio7.jpg" alt="Брошура" width="370" height="294">
+                            <picture class="produkt-img">
+                                <source
+                                    srcset="./imagis/portfolio/portfolio7/portfolio7x1.jpg 1x, ./imagis/portfolio/portfolio7/portfolio7x2.jpg 2x"
+                                    media="(min-width:1200px)">
+                                <source
+                                    srcset="./imagis/portfolio/portfolio7/portfolio7-tabx1.jpg 1x, ./imagis/portfolio/portfolio7/portfolio7-tabx2.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source
+                                    srcset="./imagis/portfolio/portfolio7/portfolio7-mobx1.jpg 1x, ./imagis/portfolio/portfolio7/portfolio7-mobx2.jpg 2x"
+                                    media="(min-width:480px)">
+                                <img src="./imagis/portfolio/portfolio7/portfolio7x1.jpg" alt="Брошура">
+                            </picture>
                             <div class="produkt-text-box">
                                 <h3 class="produkt-titel">Издание <span lang="en">Limited Edition</span></h3>
                                 <p class="produkt-text">Дизайн</p>
@@ -143,7 +269,18 @@
 
                     <li class="produkt-item">
                         <a class="produkt-link link" href="">
-                            <img class="produkt-img" src="./imagis/portfolio/portfolio8.jpg" alt="Бирка" width="370" height="294">
+                            <picture class="produkt-img">
+                                <source
+                                    srcset="./imagis/portfolio/portfolio8/portfolio8x1.jpg 1x, ./imagis/portfolio/portfolio8/portfolio8x2.jpg 2x"
+                                    media="(min-width:1200px)">
+                                <source
+                                    srcset="./imagis/portfolio/portfolio8/portfolio8-tabx1.jpg 1x, ./imagis/portfolio/portfolio8/portfolio8-tabx2.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source
+                                    srcset="./imagis/portfolio/portfolio8/portfolio8-mobx1.jpg 1x, ./imagis/portfolio/portfolio8/portfolio8-mobx2.jpg 2x"
+                                    media="(min-width:480px)">
+                                <img src="./imagis/portfolio/portfolio8/portfolio8x1.jpg" alt="Бирка">
+                            </picture>
                             <div class="produkt-text-box">
                                 <h3 class="produkt-titel">Проект <span lang="en">LAB</span></h3>
                                 <p class="produkt-text">Маркетинг</p>
@@ -153,12 +290,23 @@
 
                     <li class="produkt-item">
                         <a class="produkt-link link" href="">
-                            <img class="produkt-img" src="./imagis/portfolio/portfolio9.jpg" alt="Ноутбук" width="370" height="294">
+                            <picture class="produkt-img">
+                                <source
+                                    srcset="./imagis/portfolio/portfolio9/portfolio9x1.jpg 1x, ./imagis/portfolio/portfolio9/portfolio9x2.jpg 2x"
+                                    media="(min-width:1200px)">
+                                <source
+                                    srcset="./imagis/portfolio/portfolio9/portfolio9-tabx1.jpg 1x, ./imagis/portfolio/portfolio9/portfolio9-tabx2.jpg 2x"
+                                    media="(min-width:768px)">
+                                <source
+                                    srcset="./imagis/portfolio/portfolio9/portfolio9-mobx1.jpg 1x, ./imagis/portfolio/portfolio9/portfolio9-mobx2.jpg 2x"
+                                    media="(min-width:480px)">
+                                <img src="./imagis/portfolio/portfolio9/portfolio9x1.jpg" alt="Ноутбук">
+                            </picture>
                             <div class="produkt-text-box">
                                 <h3 class="produkt-titel" lang="en">Growing Business</h3>
                                 <p class="produkt-text">Приложение</p>
                             </div>
-                        </a>
+                        </a>                    
                     </li>
                 </ul>
             </div>
@@ -235,5 +383,6 @@
             </form>
             </address>
         </div>
-    </footer
+    </footer>
+    <script src="./js/menu.js"></script>
 </body>

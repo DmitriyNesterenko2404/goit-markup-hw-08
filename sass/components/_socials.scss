@@ -1,15 +1,21 @@
 .socials-footer-box {
-  display: block;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
+  // display: block;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  // align-content: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768) {
+    margin-bottom: none;
+  }
 }
 
 .socials-icon {
   display: flex;
+  justify-content: center;
 }
 
 .socials-titel {
+  text-align: center;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -18,6 +24,9 @@
   text-transform: uppercase;
   color: var(--main-titel-color);
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .socials-item {
